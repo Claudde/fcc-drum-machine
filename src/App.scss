@@ -110,10 +110,19 @@ $darker-accent: #041F1E;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px){ 
+  .App{
+    flex-direction: column;
+  }
   #drum-machine{
     height: 350px;
     width: 350px;
   }
+  #side-panel{
+    margin: 10px;
+    height: 200px;
+    width: 400px;
+  }
+  
 }
 @media only screen and (min-width: 480px) and (max-width: 767px){
   .App{
