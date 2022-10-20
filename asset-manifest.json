@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/fcc-drum-machine/static/css/main.710d8b19.css",
+    "main.css": "/fcc-drum-machine/static/css/main.ffdca895.css",
     "main.js": "/fcc-drum-machine/static/js/main.c0081356.js",
     "static/js/787.f7ddfc4a.chunk.js": "/fcc-drum-machine/static/js/787.f7ddfc4a.chunk.js",
     "static/media/Chord G.wav": "/fcc-drum-machine/static/media/Chord G.11e712cfd12ac32033e2.wav",
@@ -40,12 +40,12 @@
     "static/media/Kick_n_Hat.mp3": "/fcc-drum-machine/static/media/Kick_n_Hat.6dc44dc15fca60d9d594.mp3",
     "static/media/Cev_H2.mp3": "/fcc-drum-machine/static/media/Cev_H2.0b159bd307a31937b138.mp3",
     "index.html": "/fcc-drum-machine/index.html",
-    "main.710d8b19.css.map": "/fcc-drum-machine/static/css/main.710d8b19.css.map",
+    "main.ffdca895.css.map": "/fcc-drum-machine/static/css/main.ffdca895.css.map",
     "main.c0081356.js.map": "/fcc-drum-machine/static/js/main.c0081356.js.map",
     "787.f7ddfc4a.chunk.js.map": "/fcc-drum-machine/static/js/787.f7ddfc4a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.710d8b19.css",
+    "static/css/main.ffdca895.css",
     "static/js/main.c0081356.js"
   ]
 }
