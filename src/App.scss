@@ -1,0 +1,134 @@
+$app-bg-color: #1E2D2F;
+$font-color: #F7DBA7;
+$darker-accent: #041F1E;
+
+.App {
+  text-align: center;
+  background-color: $app-bg-color;
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  color: $font-color;
+  font-family: 'Raleway', sans-serif;
+}
+.neon-box{
+  box-shadow: 
+    /* White glow */
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    /* Green glow */
+    0 0 42px #0fa,
+    0 0 82px #0fa;
+}
+
+#drum-machine{
+  width: 400px;
+  min-width: 400px;
+  height: 400px;
+  border: 5px solid $font-color;
+  background-color: $darker-accent;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+  margin: 40px;
+  border-radius: 15px;
+
+  .drum-pad{
+    border-radius: 10px;
+    font-size: 1.5em;
+    background-color: lightBlue;
+    border: none;
+    box-shadow: 
+      -5px -5px 5px rgba(255, 255, 255, 0.2),
+      7px 7px 7px rgba(0, 0, 0, 0.1);
+  }
+  .drum-pad:focus {
+    border: none;
+    outline: none;
+  }
+  .drum-pad:active, .activate {
+    background-color: #83EEFF;
+    border: none;
+    outline: none;
+    box-shadow: 
+      -5px -5px 5px rgba(255, 255, 255, 0.2),
+      7px 7px 7px rgba(0, 0, 0, 0.1),
+      inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+      inset 7px 7px 7px rgba(0, 0, 0, 0.1);;
+  }
+}
+
+
+#side-panel{
+  margin: 40px;
+  border: 1px solid white;
+  background-color: $darker-accent;
+  height: 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  padding: 30px 10px;
+  font-size: 1.5em;
+  border-radius: 15px;
+  
+
+  #display{
+    background-color: white;
+    color: $darker-accent;
+    width: 80%;
+    margin-bottom: 10px;
+    p{
+      margin: 5px auto;
+    }
+  }
+  .dropdown{
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  #dropdownMenuButton{
+    width: 100%;
+  }
+  .dropdown-menu{
+    width: 100%;
+  }
+  .vol-slider{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+  }
+  #volume-slider{
+    width: 60%;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+  #drum-machine{
+    height: 350px;
+    width: 350px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+  .App{
+    flex-direction: column;
+  }
+  #side-panel{
+    margin: 10px;
+    height: 200px;
+    width: 400px;
+  }
+}
+
+
+
+// Neon Effect for buttons
+// https://css-tricks.com/how-to-create-neon-text-with-css/
+
+
